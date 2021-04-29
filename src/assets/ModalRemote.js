@@ -146,6 +146,7 @@ function ModalRemote(modalId) {
         buttonElm = document.createElement('button');
         buttonElm.setAttribute('type', type === null ? 'button' : type);
         buttonElm.setAttribute('class', classes === null ? 'btn btn-primary' : classes);
+        buttonElm.setAttribute('data-dismiss', 'modal');
         buttonElm.innerHTML = label;
         var instance = this;
         $(this.footer).append(buttonElm);
